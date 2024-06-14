@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+section{
+    padding: 10px 50px;
+}
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:50px;
+    background:#fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+}
+.logo{
+    font-size: 2em;
+    font-weight: 500;
+    text-decoration: none;
+    color:#000;
+}
+.searching{
+    position: absolute;
+    top:-8px;
+    left:17%;
+}
+.searching .search{
+    margin-top:15px;
+    width: 350px;
+    height: 35px;
+    padding-left:10px;
+    font-size: 1em;
+}
+.searching .search-btn{
+    position: absolute;
+    top:-1px;
+    left:90%;
+    width: 50px;
+    height:35px;
+    margin-top:16px;
+    margin-left:10px;
+    color:rgb(189, 102, 102);
+    cursor: pointer;
+    font-size: 1.2em;
+}
+.nav{
+    position: relative;
+    display: flex;
+}
+.nav a{
+    font-size: 1.2em;
+    font-weight: 400;
+    text-decoration: none;
+    color:#000;
+    padding:20px;
+}
+.nav a:hover{
+    color:rgb(190, 137, 22);
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    margin-top:20px;
+}
+.drop-btn{
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  margin-top:10px;
+}
+.banner{
+    position: relative;
+    top:55px;
+    width: 100%;
+    height:500px;
+    background:url('images/banner2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.content1 .section-title{
+    position: relative;
+    margin-top:50px;
+}
+.content1 .section-title .title{
+    color:#111;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    align-items: center;    
+}
+.content1 .content{
+    position: relative;
+    width: 100%;
+    min-height:500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content1 .content .col-left{
+    position: relative;
+    width: 17.7%;
+    min-height:500px;
+    margin-top:60px;
+    cursor: pointer;
+}
+.content1 .content .col-left .ads{
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+}
+.content1 .content .col-left .ads img{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    left:0;
+    cursor: pointer;
+}
+
+.content1 .content .col-right{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;    
+    margin-top:-10%;
+}
+.content1 .content .col-right .card{
+    position: relative;
+    width: 22%;
+    height:350px;
+    margin:10px;
+    margin-top:150px;
+}
+.content1 .content .col-right .card .img-card{
+    width: 100%;
+    height:230px;
+    margin-top:30px;
+}
+
+.content1 .content .col-right .card .img-card img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s ease; 
+}
+.content1 .content .col-right .card .img-card img:hover{
+    transform: translateY(-3%);
+}
+.content1 .content .col-right .card .img-title{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height:50px;
+    background:white;
+    margin-top:100px;
+}
+.price{
+    color:rgb(146, 3, 3);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.cart{
+    background-color:rgb(146, 3, 3);
+    font-size: 1em;
+    color:#fff;
+    width: 150px;
+    height:30px;
+    cursor: pointer;
+}
+.view{
+    position: absolute;
+    top:30%;
+    left:35%;
+    object-fit: cover;
+    font-size: 6em;
+}
+.scroll{
+    position: fixed;
+    top:90%;
+    left:97%;
+    width: 50px;
+    height:100px;
+}
+.scroll a{
+    font-size: 2em;
+    background:#fafafa;
+    cursor: pointer;
+}
+/*Content 2 start*/
+.content2{
+    margin-top:50px;
+    min-height:110vh;
+    background:#fafafa;
+}
+.content2 .section-title{
+    position: relative;
+    margin-top:50px;
+}
+.content2 .section-title .title{
+    color:#111;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    align-items: center;    
+}
+.content2 .content{
+    position: relative;
+    width: 100%;
+    min-height:500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content2 .content .col-left{
+    position: relative;
+    width: 25%;
+    min-height:500px;
+    margin-top:800px;
+}
+.content2 .content .col-left .poster{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/new_year.jpg');
+    margin-top:-220%;
+    border-radius: 15px;
+}
+.content2 .content .col-left .poster h2{
+    text-align: center;
+    color:rgb(226, 96, 96);
+}
+.content2 .content .col-left .poster h2 span{
+    color:#f1f1f1;
+}
+.content2 .content .col-left .poster .list{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+.content2 .content .col-left .poster .list .book_title{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    color:#f1f1f1;
+    font-size:15px;
+}
+.content2 .content .col-left .poster .list .book_title span:hover{
+    color:rgb(247, 47, 47);
+}
+.content2 .content .col-left .poster .list .book_price{
+    width: 38%;
+    font-size:15px;
+    color:rgb(233, 103, 103);
+}
+.content2 .content .col-left .poster .list .book_price span{
+    text-decoration: line-through;
+    color:rgb(221, 206, 206);
+}
+.content2 .content .col-left .ads{
+    margin-top:60px;
+}
+.content2 .content .col-right{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 75%;    
+    margin-top:-10%;
+}
+.content2 .content .col-right .card{
+    position: relative;
+    width: 22%;
+    height:350px;
+    margin:10px;
+    margin-top:150px;  
+}
+.content2 .content .col-right .card .img-card{
+    width: 100%;
+    height:230px;
+    margin-top:30px;
+}
+.content2 .content .col-right .card .img-card img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+.content2 .content .col-right .card .img-card img:hover{
+    transform: translateY(-3%);
+}
+.content2 .content .col-right .card .img-title{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height:50px;
+    background:white;
+    margin-top:100px;
+}
+.content2 .content .price{
+    color:rgb(146, 3, 3);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.content2 .content .cart{
+    background-color:rgb(146, 3, 3);
+    font-size: 1em;
+    color:#fff;
+    width: 150px;
+    height:30px;
+    cursor: pointer;
+}
+.content2 .content .view{
+    position: absolute;
+    top:30%;
+    left:35%;
+    object-fit: cover;
+    font-size: 6em;
+}
+.genre{
+    background:#fbfbfb;
+    min-height: 110vh;
+    margin-top: 20%;
+}
+.genre .section-title{
+    position: relative;
+    width: 100%;
+}
+.genre .section-title .title{
+    font-size:2em;
+    color:#000;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.genre .content table{
+    position: relative;
+    top:0;
+    left:10%;
+    align-items: center;
+    width: 80%;
+    font-size: 1.4em;
+}
+.genre .content table tr td img{
+    width: 180px;
+    margin:5px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+.genre .content table tr td img:hover{
+    transform: translateY(-6%);
+}
+.genre .content table tr td{
+    width: 200px;
+    height: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin:10px;
+}
+.contact{
+    margin-top:100px;
+    position: relative;
+    width: 100%;
+    background:rgb(56, 53, 53);
+    height:72vh;
+}
+.contact .content{
+    width: 100%;
+    height:70vh;
+    display: flex;
+    justify-content: space-between;
+}
+.contact .content .col-left{
+    width: 32%;
+    padding:20px;
+}
+.bstore{
+    color:#fff;
+    font-weight: bold;
+    text-align: center;
+}
+.contact .content .col-left p{
+    color:#fff;    
+    line-height: 2em;
+}
+.contact .content .col-left p span{
+    font-weight: 500;
+}
+.contact .content .middle{
+    width: 32%;
+}
+.contact .content .middle iframe{
+    width: 100%;
+    height:85%;
+    margin-top: -20px;
+}
+.contact .content .col-right{
+    width: 32%;
+}
+.contact .content .col-right table{
+    width: 100%;
+    height: 400px;
+}
+.contact .content .col-right table .icon .fb{
+    color: rgb(98, 98, 219);
+    font-size: 3em;
+    text-align: center;
+    cursor: pointer;
+}
+.contact .content .col-right table .icon .ig{
+    color:#d163d1;
+    font-size: 3em;
+    text-align: center;
+    cursor: pointer;
+}
+.contact .content .col-right table .icon .tw{
+    color:#659ae0;
+    font-size: 3em;
+    text-align: center;
+    cursor: pointer;
+}
+.contact .content .col-right table .icon .gm{
+    color:#d1b9d1;
+    font-size: 3em;
+    text-align: center;
+    cursor: pointer;
+}
+.socialmedia{
+    color:#f1f1f1;
+    font-size: 16px;
+    text-align: center;
+}
